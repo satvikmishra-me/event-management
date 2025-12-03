@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Events Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7fbff;
+            color: #222;
+            margin: 0;
+        }
+        header {
+            background: #264a8a;
+            color: #fff;
+            text-align: center;
+            padding: 2em 1em;
+        }
+        nav {
+            background: #1b345e;
+            text-align: center;
+            padding: 0.7em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+        section {
+            max-width: 850px;
+            margin: 2em auto;
+            padding: 2em;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px #d7e1f0;
+        }
+        h2 {
+            color: #264a8a;
+        }
+        .event-list li {
+            margin-bottom: 1em;
+            padding-bottom: 0.7em;
+            border-bottom: 1px solid #e1e7f2;
+        }
+        .highlight-box {
+            background: #eef4ff;
+            padding: 1em;
+            border-radius: 6px;
+        }
+        form label {
+            display: block;
+            margin-top: 0.5em;
+            font-weight: bold;
+            color: #264a8a;
+        }
+        input, select {
+            width: 100%;
+            padding: 6px;
+            margin-top: 0.2em;
+            border-radius: 4px;
+            border: 1px solid #b7c7e3;
+        }
+        input[type="submit"] {
+            width: auto;
+            margin-top: 1em;
+            background: #264a8a;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 8px 18px;
+        }
+        .testimonials {
+            background: #f9f4ff;
+            padding: 1.2em;
+            border-radius: 7px;
+        }
+        .testimonial {
+            margin-bottom: 1em;
+            border-left: 4px solid #9159d8;
+            padding-left: 0.7em;
+        }
+        footer {
+            background: #264a8a;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Star Events Management</h1>
+        <p>We plan. You celebrate.</p>
+        <nav>
+            <a href="#events">Events</a> |
+            <a href="#booking">Booking</a> |
+            <a href="#testimonials">Testimonials</a>
+        </nav>
+    </header>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <ul class="event-list">
+            <li>
+                <b>Corporate Annual Meet</b><br>
+                Date: 15 January 2026<br>
+                Location: Delhi Convention Center
+            </li>
+            <li>
+                <b>Dream Wedding Gala</b><br>
+                Date: 5 February 2026<br>
+                Location: Royal Palace Banquets
+            </li>
+            <li>
+                <b>Music Night Festival</b><br>
+                Date: 20 March 2026<br>
+                Location: City Open Grounds
+            </li>
+        </ul>
+    </section>
+
+    <section id="booking">
+        <h2>Booking Information</h2>
+        <div class="highlight-box">
+            <p>Fill this simple form to enquire about booking your event with us. Our team will contact you with details.</p>
+        </div>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="event-type">Event Type:</label>
+            <select id="event-type" name="event-type">
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="party">Birthday / Party</option>
+                <option value="concert">Concert / Show</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests">
+
+            <input type="submit" value="Send Booking Request">
+        </form>
+        <p><em>(Form is for demo only. It does not actually send data.)</em></p>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <b>Rohit & Anshu:</b>
+                Our wedding was perfectly organized. The decoration and music were amazing!
+            </div>
+            <div class="testimonial">
+                <b>Techrock Pvt. Ltd.:</b>
+                Professional team and smooth management of our annual meet. Highly recommended.
+            </div>
+            <div class="testimonial">
+                <b>Meeta:</b>
+                They handled everything for my parent's anniversary. Beautiful and stress-free evening.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Star Events Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>
